@@ -1,10 +1,14 @@
 window.onload = function () {
+    
+    $('.modal-trigger').leanModal();
 
     var VELOCIDADE_LUZ_VACUO_KM_S = 300000;
 
     document.getElementById('btnCalcular').addEventListener('click', function (e) {
 
         e.preventDefault();
+        
+        $('#modal1').openModal();
 
         var massa = document.getElementById('txtMassa').value;
 
