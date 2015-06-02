@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="css/materialize.min.css">
+
+    <style>
+        #title_app {
+            font-size: 2.1em;
+            line-height: 1.7rem;
+            margin: 1rem 0 1rem 0;
+        }
+        
+        .img-logo {
+            margin-top: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-wrapper blue-grey darken-1">
+            <i class="mdi-hardware-keyboard-arrow-left" style="float:left"></i>
+            <img src="img/einstein-icon.svg" class="img-logo" width="40">
+            <a href="index.html" class="brand-logo"><small>Einstein e a matemática</small></a>
+
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <h1 id="title_app"><small>Equivalência massa-energia</small></h1>
+
+        <p>
+            Em física, a equivalência massa-energia é o conceito de que qualquer massa possui uma energia associada e vice-versa...<a target="_blank" href="http://pt.wikipedia.org/wiki/Equival%C3%AAncia_massa-energia">Wikipédia</a>
+        </p>
+
+        <ul class="collapsible" data-collapsible="accordion">
+            <li>
+                <div class="collapsible-header"><i class="mdi-action-history"></i>História da fórmula</div>
+                <div class="collapsible-body">
+                    <p>A teoria de equivalência de massa-energia de Einstein foi, em parte, resultado de sua teoria sobre o efeito foto elétrico. Suas fórmulas indicavam uma equivalência entre o movimento de um corpo com massa e a energia nele contida.</p>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="mdi-action-speaker-notes"></i>Explicando os termos da fórmula</div>
+                <div class="collapsible-body">
+                    <p>A equação E=mc² é lida como "a energia (E) de um corpo em repouso é igual ao produto de sua massa (m) com o quadrado da velocidade da luz (c², sendo c a constante de velocidade da luz)".</p>
+                </div>
+            </li>
+            <li>
+                <div class="collapsible-header"><i class="mdi-action-description"></i>Aplicações da fórmula</div>
+                <div class="collapsible-body">
+                    <p>Usando a fórmula E=mc² é possível calcular a energia equivalente a qualquer massa. Em unidades do SI, E = (1kg)(≈3x10^8)^2 ≈ 9^16 Joules. Em outras palavras, em um quilograma de matéria há aproximadamente 90 quatrilhões de Joules. Isso explica como o único quilograma de matéria fissionada na bomba atômicas de Nagasaki conseguiu liberar energia equivalente a 21 quilotons de TNT.</p>
+                </div>
+            </li>
+        </ul>
+
+        <div class="row">
+
+            <form class="col s12">
+                <fieldset>
+                    <legend>Simulação</legend>
+                    <div class="row">
+                        <div class="input-field col s2">
+                            <label>E = </label>
+                        </div>
+                        <div class="input-field col s4">
+
+
+                            <label for="txtMassa">Massa em kg</label>
+                            <input id="txtMassa" type="number">
+
+                        </div>
+                        <div class="input-field col s6">
+                            <label> x 300.000 km/s²</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-field col s12">
+                            <h4 id="lblResultadoEnergia"></h4>
+                        </div>
+
+                    </div>
+
+
+                    <button id="btnCalcular" class="btn waves-effect waves-light" type="submit" name="action">Calcular</button>
+                </fieldset>
+            </form>
+        </div>
+
+
+
+        <script type="text/javascript" src="js/plugins/jquery-2.1.1.min.js"></script>
+        <script src="js/emc2.js"></script>
+        <script src="js/plugins/materialize.min.js"></script>
+
+    </div>
+</body>
+
+</html>
